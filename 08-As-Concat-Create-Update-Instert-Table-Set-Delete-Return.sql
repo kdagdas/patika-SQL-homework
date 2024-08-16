@@ -1,7 +1,7 @@
 -- ODEV 8
-/*
-1) Test veritabanınızda employee isimli sütun bilgileri id(INTEGER), 
-name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+
+-- 1) Test veritabanınızda employee isimli sütun bilgileri id(INTEGER), 
+-- name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 
 CREATE TABLE employee (
 	id INTEGER,
@@ -9,11 +9,10 @@ CREATE TABLE employee (
 	birthday DATE,
 	email VARCHAR(100)
 );
-*/
 
-/*
-2) Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 
-50 adet veri ekleyelim.
+
+-- 2) Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 
+-- 50 adet veri ekleyelim.
 
 insert into employee (id, name, email, birthday) values (1, 'Zola Absalom', 'zabsalom0@paginegialle.it', '2004-10-19 06:50:00');
 insert into employee (id, name, email, birthday) values (2, 'Chloette Iacomi', 'ciacomi1@mapquest.com', '2007-03-25 00:38:32');
@@ -65,14 +64,13 @@ insert into employee (id, name, email, birthday) values (47, 'Frederigo Carik', 
 insert into employee (id, name, email, birthday) values (48, 'Alexina Stranieri', 'astranieri1b@qq.com', '1965-04-19 03:24:38');
 insert into employee (id, name, email, birthday) values (49, 'Valerie Reyson', 'vreyson1c@netscape.com', '1958-08-22 12:38:45');
 insert into employee (id, name, email, birthday) values (50, 'Kellyann Ghion', 'kghion1d@github.io', '1973-03-24 15:52:25');
-*/ 
+ 
 
 /*
 3) Sütunların her birine göre diğer sütunları güncelleyecek
 5 adet UPDATE işlemi yapalım.
 */
 
-/*
 UPDATE employee
 SET name = 'Kadir Dağdaş',
 	email = 'kdagdas9@gmail.com',
@@ -104,7 +102,6 @@ SET name = 'Example',
 	birthday = '2024-02-06'
 WHERE id BETWEEN 35 AND 45 
 RETURNING *;
-*/
 
 /*
 4) Sütunların her birine göre ilgili satırı silecek
